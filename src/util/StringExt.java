@@ -6,11 +6,13 @@ import java.util.Map;
 public class StringExt {
 
 	public static void main(String[] args) {
+		String sTemp = "test1";
+		System.out.println(sTemp.substring(0, 5));
 		//String[] tokens = {"GET", "/test.exe.ppt.exe"};
 		//String[] tokens = {"GET", "/test.exe"};
-		String[] tokens = {"GET", "/index.html?name=test&test=1"};
+		/*String[] tokens = {"GET", "/index.html?name=test&test=1"};
 		Map<String, String> mapRet = extParamToMap(tokens[1]);
-		System.out.println(mapRet.size());
+		System.out.println(mapRet.size());*/
 		//String[] tokens = {"GET", "/index.exe?name=test&test=1"};
 				
 		//System.out.println(tokens[1]);
