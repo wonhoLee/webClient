@@ -1,4 +1,4 @@
-package util;
+package me.etc.util;
 
 import java.text.DecimalFormat;
 import java.time.LocalDateTime;
@@ -12,7 +12,7 @@ public class TimeTest extends wonTest {
 		LocalDateTime now = LocalDateTime.now();
 		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
 		DateTimeFormatter dateTimeFormatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
-		String nowString = now.format(dateTimeFormatter);   // °á°ú : 2018³â 5¿ù 28ÀÏ ¿ÀÈÄ 11½Ã 0ºÐ
+		String nowString = now.format(dateTimeFormatter);   // ï¿½ï¿½ï¿½ : 2018ï¿½ï¿½ 5ï¿½ï¿½ 28ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 11ï¿½ï¿½ 0ï¿½ï¿½
 
 		//System.out.println(now);
 		//System.out.println(nowString);

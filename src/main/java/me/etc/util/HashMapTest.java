@@ -1,4 +1,4 @@
-package util;
+package me.etc.util;
 
 import java.util.HashMap;
 

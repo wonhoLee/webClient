@@ -1,4 +1,4 @@
-package util;
+package me.etc.util;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -38,7 +38,7 @@ public class StringExt {
 		System.out.println(extFileName("/hello?name=parm"));*/
 	}
 
-	//filename ÃßÃâ
+		//filename ï¿½ï¿½ï¿½ï¿½
 		public static String extFileName(String sInput) {
 			String sRet = "";
 			if(sInput.indexOf("?") > -1) {
@@ -49,7 +49,7 @@ public class StringExt {
 			return sRet;
 		}
 			
-		//È®ÀåÀÚ ÃßÃâ
+		//È®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		public static Boolean isExtensionExe(String sInput) {
 			Boolean bRet = false;
 			if(sInput.indexOf(".") > -1) {
@@ -67,7 +67,7 @@ public class StringExt {
 			return bRet;
 		}
 
-		//paramter ÃßÃâ
+		//paramter ï¿½ï¿½ï¿½ï¿½
 		public static Map<String, String> extParamToMap(String sParam) {
 			Map<String, String> mapRet = new HashMap<>();
 			if(sParam.indexOf("?") > -1) {
