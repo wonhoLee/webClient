@@ -1,3 +1,40 @@
 # wonEtc
-
 간단한 기능 테스트 및 연습용
+
+## Stream
+- filter
+- map
+- mapToInt
+- mapToLong
+- mapToDouble
+- flatMap
+- flatMapToInt
+- flatMapToLong
+- flatMapToDouble
+- distinct
+- sorted
+- peek
+- limit
+- skip
+- takeWhile
+- dropWhile
+- forEach
+- forEachOrdered
+- toArray
+- reduce
+- collect
+- min
+- max
+- count
+- anyMatch
+- allMatch
+- noneMatch
+- findFirst
+- findAny
+- builder
+- empty
+- of
+- ofNullable
+- iterate
+- generate
+- concat

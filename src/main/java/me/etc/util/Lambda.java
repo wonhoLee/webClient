@@ -62,9 +62,10 @@ public class Lambda {
 		.collect(Collectors.toList());
 		Arrays.asList(1,2,3).stream()
 		.iterator();*/
-		
+
 		//testMap();
-		testFilter();
+//		testFilter();
+		testString();
 	}
 	
 	@FunctionalInterface
@@ -151,4 +152,38 @@ public class Lambda {
 					.map(String::toUpperCase)
 					.collect(joining(", ")));
 	}*/
+
+	public static void testListToArray() {
+		List<Integer> source = Arrays.asList(1, 2, 3, 4, 5);
+		int[] target = source.stream().mapToInt(Integer::intValue).toArray();
+		System.out.println(Arrays.toString(target));
+	}
+
+	public static void testString() {
+		String[] A = {"서울", "대전", "대구", "부산"};
+		String[] B = {"강원", "전주", "서울", "부산", "제주"};
+
+		List<String> listA = Arrays.asList(A);
+		List<String> listB = Arrays.asList(B);
+
+		List<String> union = new ArrayList<>(listA);
+		listB.stream()
+				.filter(e -> !union.contains(e))
+				.distinct()
+				.forEach(union::add);
+
+		List<String> intersect = listA.stream()
+				.filter(listB::contains)
+				.distinct()
+				.collect(Collectors.toList());
+
+		List<String> difference = union.stream()
+				.filter(e -> !intersect.contains(e))
+				.distinct()
+				.collect(Collectors.toList());
+
+		System.out.println(union);
+		System.out.println(intersect);
+		System.out.println(difference);
+	}
 }
